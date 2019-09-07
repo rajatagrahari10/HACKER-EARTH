@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using  namespace std;
+int main()
+{
+    int t;
+    cin>>t; 
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        
+        int alice=0;
+        int bob=0;
+        
+        for(int i=0;i<n;i++)
+        {
+            int number;
+            cin>>number;
+            bob= max (bob,number);
+        }
+        
+        for(int i=0;i<n;i++)
+        {
+            int number;
+            cin>>number;
+            alice= max(alice,number);
+            
+        }
+        if(alice>bob)
+        {
+            cout<<"Alice"<<endl;
+            
+        }
+        else if(bob>alice)
+        {
+            cout<<"Bob"<<endl;
+        }
+        else
+        {
+            cout<<"Tie"<<endl;
+        }
+        
+        
+       
+        
+    }
+    return 0;
+   
+}
