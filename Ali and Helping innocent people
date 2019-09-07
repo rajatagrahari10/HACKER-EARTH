@@ -1,0 +1,33 @@
+///**************************************************///
+///               !! HELLO GOD !!                  ///
+///                 >>IT'S ME<<                      ///
+///                RAJAT AGRAHARI                     ///
+///**************************************************///
+//THIS CODE IS IMPLEMENTED BY RAJJO (RAJAT AGRAHARI)
+// Author: RAJAT AGRAHARI (email: rajatagrahari10@gmail.com)
+// Author Contact:-08808888606
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s;
+    cin >> s;
+    int len = s.size();
+    
+    int first = (s[0]-'0')+(s[1]-'0');
+    int second = (s[3]-'0')+(s[4]-'0');
+    int third = (s[3]-'0')+(s[4]-'0');
+    int forth = (s[len-1]-'0')+(s[len-2]-'0');
+    
+    
+    if(first%2==0 && second%2==0 && third%2==0 && forth%2==0 && (s[2]!='A'&&s[2]!='E'&&s[2]!='O'&&s[2]!='U'&&s[2]!='I'&&s[2]!='Y' ))
+    {
+        cout<<"valid";
+        
+    }
+    else
+    {
+        cout<<"invalid";
+    }
+}
