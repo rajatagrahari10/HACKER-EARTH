@@ -1,0 +1,19 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+int main() {
+    int a,b,math;
+                    
+    cin>>b>>a;
+    
+   int height = (int)ceil((2.0*a)/b);
+    cout<<height;
+
+    return 0;
+}
